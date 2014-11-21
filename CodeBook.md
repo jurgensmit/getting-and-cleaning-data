@@ -18,25 +18,25 @@ For each record in the dataset it is provided:
 
 The script run_analysis.R is used to prepare a tidy data set from the input data that can be used for later analysis.
 
-### Step 1: Merges the training and the test sets to create one data set.
+#### Step 1: Merges the training and the test sets to create one data set.
 
-The feature, activity and subject data is read from respectively the files X_*.txt, y_*.txt and subject_*.txt files from the training and test folder. The training and test data are combined into one data set with the names X, y and subject
+The feature, activity and subject data is read from respectively the files X_*.txt, y_*.txt and subject_*.txt files from the training and test folders. The training and test data are combined into one data set with the names X, y and subject
 
-### Step 2: Extracts only the measurements on the mean and standard deviation for each measurement. 
+#### Step 2: Extracts only the measurements on the mean and standard deviation for each measurement. 
 
 The mean and standard deviation columns are being extracted from the features data set X, the other features are discarded.
 
-### Step 3: Uses descriptive activity names to name the activities in the data set
+#### Step 3: Uses descriptive activity names to name the activities in the data set
 
 Relabel the activity data y with the labels as found in the file features.txt.
 
-### Step 4: Appropriately labels the data set with descriptive variable names. 
+#### Step 4: Appropriately labels the data set with descriptive variable names. 
 
 Label the activity and subject columns as activity and subject. Relabel the feature columns to make them tidy, i.e. all lower case and remove the minus sign and parentheses from the column names.
 
 The subject (subject), activity (y) and feature (X) data sets are combined into one big data set data.
 
-### Step 5: From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
+#### Step 5: From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
 
 To create the tidy data set the data is grouped (aggregated) by subject and activity. Of the resulting groups the mean is calculated.
 
